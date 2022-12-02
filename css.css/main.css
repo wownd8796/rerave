@@ -102,7 +102,7 @@ h1 svg path {
 }
 
 .product {
-  padding: 300px 0px 300px 150px;
+  padding: 300px 0px 300px 130px;
 }
 .product li {
   display: flex;
@@ -114,10 +114,8 @@ h1 svg path {
   padding-left: 100px;
 }
 .product li img {
-  width: auto;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  width: 50%;
+  height: auto;
 }
 .product li:nth-child(2n) {
   flex-direction: row-reverse;
@@ -127,15 +125,37 @@ h1 svg path {
   padding-left: 0;
   padding-right: 100px;
 }
+.product li .mask {
+  border: 2px solid blueviolet;
+  width: 48%;
+  height: auto;
+}
+.product li .cream {
+  width: 60%;
+  height: auto;
+}
+.product li .star {
+  width: 48%;
+  height: auto;
+}
 .product .text-box h5 {
   font-size: 15px;
   color: #999;
+  margin-bottom: 20px;
 }
 .product .text-box h2 {
   font-size: 60px;
+  color: bisque;
 }
 .product .text-box h3 {
   font-size: 28px;
+  padding-top: 20px;
+  color: aqua;
+}
+.product .text-box p {
+  color: royalblue;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .product .text-box button {
   background: transparent;
@@ -157,11 +177,24 @@ h1 svg path {
 
 .story {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
-
+.story div img {
+  width: 40%;
+}
+.story div img:nth-of-type(1) {
+  margin-right: 20px;
+  border: 2px solid red;
+}
+.story .text-box {
+  margin: 0 auto;
+  border: 1px solid black;
+  color: red;
+}
+.story .text-box h2 {
+  font-size: 60px;
+}
 .story button {
   background: transparent;
   font-size: 20px;
@@ -178,4 +211,54 @@ h1 svg path {
 }
 .story button a:hover {
   color: black;
-} /*# sourceMappingURL=main.css.map */
+}
+
+.tech {
+  padding: 180px 0;
+}
+.tech .text-box {
+  color: pink;
+  margin-bottom: 90px;
+}
+.tech .text-box h2 {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.tech .box {
+  width: 93%;
+  height: 540px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.tech .box h4 {
+  font-size: 42px;
+}
+.tech .box .one {
+  width: 32%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/tech_penellagen.jpg);
+  background-size: cover;
+}
+.tech .box .two {
+  width: 32%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/tech_sheet.jpg);
+  background-size: cover;
+}
+.tech .box .three {
+  width: 32%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/tech_ingredient.jpg);
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */
