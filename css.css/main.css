@@ -117,7 +117,7 @@ h1 svg path {
   width: auto;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .product li:nth-child(2n) {
   flex-direction: row-reverse;
@@ -160,4 +160,22 @@ h1 svg path {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.story button {
+  background: transparent;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.story button a:link {
+  color: black;
+}
+.story button a:visited {
+  color: black;
+}
+.story button a:active {
+  color: black;
+}
+.story button a:hover {
+  color: black;
+} /*# sourceMappingURL=main.css.map */

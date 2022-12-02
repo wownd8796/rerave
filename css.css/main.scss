@@ -204,4 +204,29 @@ h1 {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  .text-box {
+    border: 1px solid black;
+    color: red;
+    h2 {
+      font-size: 60px;
+    }
+  }
+  button {
+    background: transparent;
+    font-size: 20px;
+    text-decoration: underline;
+
+    a:link {
+      color: black;
+    }
+    a:visited {
+      color: black;
+    }
+    a:active {
+      color: black;
+    }
+    a:hover {
+      color: black;
+    }
+  }
 }
