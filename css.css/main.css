@@ -222,7 +222,11 @@ h1 svg path {
 }
 .tech .text-box h2 {
   font-size: 60px;
-  margin-bottom: 25px;
+  margin-top: 50px;
+}
+.tech .text-box p {
+  font-size: 16px;
+  line-height: 26px;
 }
 .tech .box {
   width: 93%;

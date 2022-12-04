@@ -275,12 +275,17 @@ h1 {
 // product끝
 .tech {
   padding: 180px 0;
+
   .text-box {
     color: pink;
     margin-bottom: 90px;
     h2 {
       font-size: 60px;
-      margin-bottom: 25px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
   .box {
