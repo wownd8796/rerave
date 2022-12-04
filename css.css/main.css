@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
 .inner {
   width: 100%;
   margin: 0 auto;
@@ -20,6 +21,7 @@ h1 svg path {
 .menu_top {
   text-decoration: none;
   font-size: 20px;
+  font-family: "Marcellus", serif;
   width: 45%;
   display: flex;
   align-items: center;
@@ -74,6 +76,7 @@ h1 svg path {
   text-align: center;
 }
 .banner_center div {
+  font-family: "Marcellus", serif;
   font-size: 70px;
   color: white;
   margin-bottom: 20px;
@@ -83,6 +86,7 @@ h1 svg path {
   margin-bottom: 30px;
 }
 .banner_center button {
+  font-family: "Marcellus", serif;
   font-size: 20px;
   color: white;
   background: transparent;
@@ -102,16 +106,16 @@ h1 svg path {
 }
 
 .product {
-  padding: 300px 0px 300px 130px;
+  padding: 180px 0px 200px 130px;
 }
 .product li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 170px;
 }
 .product li > div {
-  padding-left: 100px;
+  padding-left: 160px;
 }
 .product li img {
   width: 50%;
@@ -145,6 +149,7 @@ h1 svg path {
 }
 .product .text-box h2 {
   font-size: 60px;
+  font-family: "Marcellus", serif;
   color: bisque;
 }
 .product .text-box h3 {
@@ -160,6 +165,7 @@ h1 svg path {
 .product .text-box button {
   background: transparent;
   font-size: 20px;
+  font-family: "Marcellus", serif;
   text-decoration: underline;
 }
 .product .text-box button a:link {
@@ -176,9 +182,14 @@ h1 svg path {
 }
 
 .story {
+  width: 100%;
+  height: 840px;
+  padding: 192px 0;
   display: flex;
   align-items: center;
   text-align: center;
+  background: url(../img/about_bg.jpg) center center no-repeat;
+  background-size: cover;
 }
 .story div img {
   width: 40%;
@@ -192,11 +203,16 @@ h1 svg path {
   border: 1px solid black;
   color: red;
 }
+.story .text-box h5 {
+  font-family: "Marcellus", serif;
+}
 .story .text-box h2 {
   font-size: 60px;
+  font-family: "Marcellus", serif;
 }
 .story button {
   background: transparent;
+  font-family: "Marcellus", serif;
   font-size: 20px;
   text-decoration: underline;
 }
@@ -221,48 +237,83 @@ h1 svg path {
   margin-bottom: 90px;
 }
 .tech .text-box h2 {
+  font-family: "Marcellus", serif;
   font-size: 60px;
-  margin-top: 50px;
 }
 .tech .text-box p {
   font-size: 16px;
   line-height: 26px;
 }
-.tech .box {
+
+.one-two-three {
   width: 93%;
   height: 540px;
   margin: 0 auto;
   color: #fff;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
-.tech .box h4 {
+.one-two-three > li {
+  position: relative;
+  filter: grayscale(90%);
+  transition: 0.5s;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.one-two-three > li:hover {
+  filter: grayscale(0%);
+  border-radius: 30px;
+}
+.one-two-three > li img {
+  width: 100%;
+  height: 100%;
+}
+.one-two-three > li h4,
+.one-two-three > li p {
+  position: absolute;
+}
+.one-two-three > li h4 {
+  font-family: "Marcellus", serif;
   font-size: 42px;
+  top: 20px;
+  left: 20px;
 }
-.tech .box .one {
-  width: 32%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url(../img/tech_penellagen.jpg);
-  background-size: cover;
+.one-two-three > li p {
+  bottom: 20px;
+  left: 20px;
+  width: 60%;
 }
-.tech .box .two {
-  width: 32%;
-  padding: 20px;
+
+.main-footer {
+  font-family: "Marcellus", serif;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  background-image: url(../img/tech_sheet.jpg);
-  background-size: cover;
 }
-.tech .box .three {
-  width: 32%;
-  padding: 20px;
+.main-footer .f-logo {
+  margin-left: 40px;
+}
+.main-footer .f-manu {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url(../img/tech_ingredient.jpg);
-  background-size: cover;
+  padding: 0 20px;
+  gap: 20px;
+  font-size: 13px;
+}
+.main-footer .f-manu a:link {
+  color: black;
+}
+.main-footer .f-manu a:visited {
+  color: black;
+}
+.main-footer .f-manu a:active {
+  color: black;
+}
+.main-footer .f-manu a:hover {
+  color: black;
+}
+.main-footer ul:nth-child(2) {
+  width: 30%;
+}
+.main-footer ul > li:nth-child(1) {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */
