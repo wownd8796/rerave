@@ -101,6 +101,49 @@ h1 {
   // .menu-trigger span:nth-of-type(3) {
   //   bottom: 0;
   // }
+  nav {
+    position: relative;
+    height: 100%;
+    button {
+      width: 26px;
+      height: 25px;
+      position: relative;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      &:hover > span:nth-child(1) {
+        top: 30%;
+        transform: rotate(45deg);
+      }
+      &:hover > span:nth-child(2) {
+        top: 30%;
+        transform: rotateX(100%);
+        opacity: 0;
+      }
+      &:hover > span:nth-child(3) {
+        top: 30%;
+        transform: rotate(-45deg);
+      }
+      span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #fff;
+        transition: 0.3s;
+
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 30%;
+        }
+        &:nth-child(3) {
+          top: 60%;
+        }
+      }
+    }
+  }
 }
 .visual {
   background-image: url(../img/main/top_banner.jpg);
@@ -149,14 +192,17 @@ h1 {
 // banner_center 끝
 
 .product {
-  padding: 180px 0px 200px 130px;
+  // padding: 180px 0px 200px 0px;
   // padding: 180px 0;
   // margin-left: auto;
+  padding-top: 180px;
+  padding-bottom: 200px;
   li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 170px;
+
     > div {
       padding-left: 160px;
     }
@@ -167,16 +213,21 @@ h1 {
       height: auto;
       // object-fit: cover;
     }
+    &:nth-child(n) {
+      padding: 0 100px;
+    }
     &:nth-child(2n) {
       flex-direction: row-reverse;
       height: 700px;
+      padding-left: 130px;
+      padding-bottom: 200px;
+      background: url(../img/main/prd_bg.png) left bottom no-repeat;
       > div {
         padding-left: 0;
         padding-right: 100px;
       }
     }
     .mask {
-      border: 2px solid blueviolet;
       width: 48%;
       height: auto;
     }
@@ -201,17 +252,14 @@ h1 {
     h2 {
       font-size: 60px;
       font-family: "Marcellus", serif;
-      color: bisque;
     }
 
     h3 {
       font-size: 28px;
       padding-top: 20px;
-      color: aqua;
     }
 
     p {
-      color: royalblue;
       margin-top: 50px;
       margin-bottom: 40px;
     }
@@ -253,12 +301,10 @@ h1 {
   }
   div img:nth-of-type(1) {
     margin-right: 20px;
-    border: 2px solid red;
   }
   .text-box {
     margin: 0 auto;
-    border: 1px solid black;
-    color: red;
+
     h5 {
       font-family: "Marcellus", serif;
     }
@@ -291,14 +337,16 @@ h1 {
 }
 // product끝
 .tech {
+  width: 93%;
+  margin: 0 auto;
   padding: 180px 0;
 
   .text-box {
-    color: pink;
     margin-bottom: 90px;
     h2 {
       font-family: "Marcellus", serif;
       font-size: 60px;
+      margin-bottom: 25px;
     }
     p {
       font-size: 16px;
@@ -308,7 +356,7 @@ h1 {
 }
 
 .one-two-three {
-  width: 93%;
+  width: 100%;
   height: 540px;
   margin: 0 auto;
   color: #fff;

@@ -1,1 +1,53 @@
 @import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+// .inner {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 30px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   position: fixed;
+// }
+// .menu_top {
+//   text-decoration: none;
+//   font-size: 20px;
+//   font-family: "Marcellus", serif;
+//   width: 45%;
+//   display: flex;
+//   align-items: center;
+// }
+.main-top {
+  width: 71%;
+  margin: 0 auto;
+  text-align: center;
+  .inner {
+    padding: 80px 0 150px;
+    .video {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding-bottom: 35%;
+      transition: 0.2s ease;
+    }
+  }
+  h2 {
+    width: 70%;
+  }
+  .top-text {
+    display: flex;
+    justify-content: space-between;
+    background: pink;
+    p {
+      width: 50%;
+      text-align: left;
+      margin-top: 120px;
+      padding: 0 7.4%;
+      color: red;
+    }
+  }
+}
+.info {
+  padding: 160px 0 200px;
+  background: #ededed;
+}

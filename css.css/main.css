@@ -63,6 +63,47 @@ h1 svg path {
 .menu_top .menu-trigger i {
   color: white;
 }
+.menu_top nav {
+  position: relative;
+  height: 100%;
+}
+.menu_top nav button {
+  width: 26px;
+  height: 25px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu_top nav button:hover > span:nth-child(1) {
+  top: 30%;
+  transform: rotate(45deg);
+}
+.menu_top nav button:hover > span:nth-child(2) {
+  top: 30%;
+  transform: rotateX(100%);
+  opacity: 0;
+}
+.menu_top nav button:hover > span:nth-child(3) {
+  top: 30%;
+  transform: rotate(-45deg);
+}
+.menu_top nav button span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid #fff;
+  transition: 0.3s;
+}
+.menu_top nav button span:nth-child(1) {
+  top: 0;
+}
+.menu_top nav button span:nth-child(2) {
+  top: 30%;
+}
+.menu_top nav button span:nth-child(3) {
+  top: 60%;
+}
 
 .visual {
   background-image: url(../img/main/top_banner.jpg);
@@ -110,7 +151,8 @@ h1 svg path {
 }
 
 .product {
-  padding: 180px 0px 200px 130px;
+  padding-top: 180px;
+  padding-bottom: 200px;
 }
 .product li {
   display: flex;
@@ -125,16 +167,21 @@ h1 svg path {
   width: 50%;
   height: auto;
 }
+.product li:nth-child(n) {
+  padding: 0 100px;
+}
 .product li:nth-child(2n) {
   flex-direction: row-reverse;
   height: 700px;
+  padding-left: 130px;
+  padding-bottom: 200px;
+  background: url(../img/main/prd_bg.png) left bottom no-repeat;
 }
 .product li:nth-child(2n) > div {
   padding-left: 0;
   padding-right: 100px;
 }
 .product li .mask {
-  border: 2px solid blueviolet;
   width: 48%;
   height: auto;
 }
@@ -154,15 +201,12 @@ h1 svg path {
 .product .text-box h2 {
   font-size: 60px;
   font-family: "Marcellus", serif;
-  color: bisque;
 }
 .product .text-box h3 {
   font-size: 28px;
   padding-top: 20px;
-  color: aqua;
 }
 .product .text-box p {
-  color: royalblue;
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -200,12 +244,9 @@ h1 svg path {
 }
 .story div img:nth-of-type(1) {
   margin-right: 20px;
-  border: 2px solid red;
 }
 .story .text-box {
   margin: 0 auto;
-  border: 1px solid black;
-  color: red;
 }
 .story .text-box h5 {
   font-family: "Marcellus", serif;
@@ -234,15 +275,17 @@ h1 svg path {
 }
 
 .tech {
+  width: 93%;
+  margin: 0 auto;
   padding: 180px 0;
 }
 .tech .text-box {
-  color: pink;
   margin-bottom: 90px;
 }
 .tech .text-box h2 {
   font-family: "Marcellus", serif;
   font-size: 60px;
+  margin-bottom: 25px;
 }
 .tech .text-box p {
   font-size: 16px;
@@ -250,7 +293,7 @@ h1 svg path {
 }
 
 .one-two-three {
-  width: 93%;
+  width: 100%;
   height: 540px;
   margin: 0 auto;
   color: #fff;
