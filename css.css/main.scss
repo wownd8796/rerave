@@ -146,7 +146,7 @@ h1 {
   }
 }
 .visual {
-  background-image: url(./img/main/top_banner.jpg);
+  background-image: url(../img/main/top_banner.jpg);
   width: 100%;
   height: 850px;
   background-position: center center;
@@ -221,7 +221,7 @@ h1 {
       height: 700px;
       padding-left: 130px;
       padding-bottom: 200px;
-      background: url(./img/main/prd_bg.png) left bottom no-repeat;
+      background: url(../img/main/prd_bg.png) left bottom no-repeat;
       > div {
         padding-left: 0;
         padding-right: 100px;
@@ -293,7 +293,7 @@ h1 {
   // justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: url(./img/main/about_bg.jpg) center center no-repeat;
+  background: url(../img/main/about_bg.jpg) center center no-repeat;
   background-size: cover;
 
   div img {
