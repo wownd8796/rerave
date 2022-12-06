@@ -209,7 +209,7 @@ h1 {
     img {
       // height: 100%;
       // width: auto;
-      width: 50%;
+      width: 70%;
       height: auto;
       // object-fit: cover;
     }
@@ -399,6 +399,8 @@ h1 {
   font-family: "Marcellus", serif;
   display: flex;
   justify-content: space-between;
+  width: 93%;
+  margin: 0 auto;
   .f-logo {
     margin-left: 40px;
     p {

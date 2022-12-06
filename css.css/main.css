@@ -164,7 +164,7 @@ h1 svg path {
   padding-left: 160px;
 }
 .product li img {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 .product li:nth-child(n) {
@@ -336,6 +336,8 @@ h1 svg path {
   font-family: "Marcellus", serif;
   display: flex;
   justify-content: space-between;
+  width: 93%;
+  margin: 0 auto;
 }
 .main-footer .f-logo {
   margin-left: 40px;
