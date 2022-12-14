@@ -67,6 +67,9 @@ h1 {
   a:hover {
     color: white;
   }
+  a.active {
+    color: yellow;
+  }
   li {
     display: inline-block;
   }

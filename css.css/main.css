@@ -50,6 +50,9 @@ h1 svg path {
 .menu_top a:hover {
   color: white;
 }
+.menu_top a.active {
+  color: yellow;
+}
 .menu_top li {
   display: inline-block;
 }
