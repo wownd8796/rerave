@@ -159,8 +159,20 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .banner_center {
+  position: relative;
+  animation: fadeInUp 1s forwards;
   text-align: center;
   div {
     font-family: "Marcellus", serif;
@@ -215,6 +227,7 @@ h1 {
       width: 70%;
       height: auto;
       // object-fit: cover;
+      animation: fadeInUp 1s forwards;
     }
     &:nth-child(n) {
       padding: 0 100px;

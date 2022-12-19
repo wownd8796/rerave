@@ -120,7 +120,31 @@ h1 svg path {
   justify-content: center;
 }
 
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .banner_center {
+  position: relative;
+  -webkit-animation: fadeInUp 1s forwards;
+          animation: fadeInUp 1s forwards;
   text-align: center;
 }
 .banner_center div {
@@ -169,6 +193,8 @@ h1 svg path {
 .product li img {
   width: 70%;
   height: auto;
+  -webkit-animation: fadeInUp 1s forwards;
+          animation: fadeInUp 1s forwards;
 }
 .product li:nth-child(n) {
   padding: 0 100px;
