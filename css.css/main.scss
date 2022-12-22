@@ -46,11 +46,21 @@ h1 {
   width: 45%;
   display: flex;
   align-items: center;
+  position: relative;
+
+  .menuBtn {
+    &:hover {
+      background-color: red;
+      .smallMenu {
+        // opacity: 1;
+        display: block;
+      }
+    }
+  }
 
   .menu {
     display: flex;
     justify-content: space-between;
-    position: relative;
   }
   a {
     padding: 15px;
@@ -73,6 +83,27 @@ h1 {
   li {
     display: inline-block;
   }
+
+  .smallMenu {
+    // display: none;
+    position: absolute;
+    top: 40px;
+    right: 75px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    // opacity: 0;
+
+    li {
+      margin: 15px 0;
+    }
+    a {
+      color: black;
+      font-size: 16px;
+    }
+  }
+
   .menu-trigger {
     position: relative;
     width: 30px;
@@ -83,6 +114,7 @@ h1 {
       color: white;
     }
   }
+
   // .menu-trigger,
   // .menu-trigger span {
   //   display: inline-block;
@@ -114,40 +146,41 @@ h1 {
       background-color: transparent;
       border: none;
       cursor: pointer;
+    }
 
-      &:hover > span:nth-child(1) {
-        top: 30%;
-        transform: rotate(45deg);
-      }
-      &:hover > span:nth-child(2) {
-        top: 30%;
-        transform: rotateX(100%);
-        opacity: 0;
-      }
-      &:hover > span:nth-child(3) {
-        top: 30%;
-        transform: rotate(-45deg);
-      }
-      span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        border-top: 2px solid #fff;
-        transition: 0.3s;
+    &:hover > span:nth-child(1) {
+      top: 30%;
+      transform: rotate(45deg);
+    }
+    &:hover > span:nth-child(2) {
+      top: 30%;
+      transform: rotateX(100%);
+      opacity: 0;
+    }
+    &:hover > span:nth-child(3) {
+      top: 30%;
+      transform: rotate(-45deg);
+    }
+    span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #fff;
+      transition: 0.3s;
 
-        &:nth-child(1) {
-          top: 0;
-        }
-        &:nth-child(2) {
-          top: 30%;
-        }
-        &:nth-child(3) {
-          top: 60%;
-        }
+      &:nth-child(1) {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 30%;
+      }
+      &:nth-child(3) {
+        top: 60%;
       }
     }
   }
 }
+
 .visual {
   background-image: url(../img/main/top_banner.jpg);
   width: 100%;
