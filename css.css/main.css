@@ -395,6 +395,7 @@ h1 svg path {
   justify-content: space-between;
   width: 93%;
   margin: 0 auto;
+  margin-left: 50px;
 }
 .main-footer .f-logo {
   margin-left: 40px;
@@ -409,6 +410,7 @@ h1 svg path {
   gap: 20px;
   font-size: 13px;
   width: 38%;
+  margin-left: 100px;
 }
 .main-footer .f-manu a:link {
   color: black;
