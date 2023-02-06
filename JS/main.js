@@ -1,5 +1,3 @@
-$("body").prepend($(".inner"));
-
-$(".banner").load("../index.html .inner");
-
-console.log($(".inner"));
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+});
