@@ -15,6 +15,7 @@
 }
 
 h1 {
+  margin-left: 70px;
   color: white;
   cursor: pointer;
 }
@@ -26,17 +27,19 @@ h1 svg path {
   text-decoration: none;
   font-size: 20px;
   font-family: "Marcellus", serif;
-  width: 45%;
+  width: 35%;
   display: flex;
   align-items: center;
   position: relative;
 }
-.menu_top .menuBtn:hover {
-  background-color: red;
+.menu_top .menuBtn {
+  position: relative;
+  margin-left: 15px;
 }
-.menu_top .menuBtn .smallMenu {
+.menu_top .menuBtn:hover .smallMenu {
   opacity: 1;
   display: block;
+  position: absolute;
 }
 .menu_top .menu {
   display: flex;
@@ -64,9 +67,10 @@ h1 svg path {
   display: inline-block;
 }
 .menu_top .smallMenu {
+  display: none;
   position: absolute;
   top: 40px;
-  right: 75px;
+  left: -10px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -404,6 +408,7 @@ h1 svg path {
   padding: 0 20px;
   gap: 20px;
   font-size: 13px;
+  width: 38%;
 }
 .main-footer .f-manu a:link {
   color: black;
